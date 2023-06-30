@@ -1,0 +1,52 @@
+#header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 90%;
+  margin: 0 1vw;
+}
+
+
+.bEntrar,
+.bCriar {
+  padding: 1vh;
+  margin: 0 1vw;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+}
+
+.bEntrar {
+  color: #fff;
+  background-color: transparent;
+}
+
+.bCriar {
+  background-color: #fff;
+}
+
+.bEntrar:hover,
+.bCriar:hover {
+  transition: 0.2s linear;
+  opacity: 0.6;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bEntrar:not(:hover),
+.bCriar:not(:hover) {
+  transition: 0.2s linear;
+}
+
+.bEntrar:active,
+.bCriar:active {
+  transition: 0.2s linear;
+  transform: translate(0, 2px);
+  box-shadow: rgba(0, 0, 0, 0.2) 2px -2px 0;
+}

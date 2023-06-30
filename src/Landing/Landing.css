@@ -1,0 +1,120 @@
+::selection {
+    background-color: #fff;
+    color: #0a3533;
+  }
+  
+  #containercriacao {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #section1 {
+    height: 90vh;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  #section2,
+  #section4 {
+    height: 100vh;
+    width: 100%;
+    padding: 0 10%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+  }
+  
+  #section3 {
+    height: 100vh;
+    width: 100%;
+    padding: 0 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+  }
+  
+  .imgsection1 {
+    width: 50%;
+  }
+  
+  .contentsection1 {
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .titlesection1 {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  
+  .subtitlesection1 {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  
+  .buttonsection1 {
+    width: 40%;
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+    
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+  }
+  
+  .buttonsection1:hover {
+    transition: 0.2s linear;
+    opacity: 0.7;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .buttonsection1:not(:hover) {
+    transition: 0.2s linear;
+  }
+  
+  .buttonsection1:active {
+    transition: 0.2s linear;
+    transform: translate(0, 2px);
+    box-shadow: rgba(0, 0, 0, 0.2) 2px -2px 0;
+  }
+  
+  .icon {
+    color: #fff;
+    position: absolute;
+    bottom: 1vh;
+    right: calc(50% - 2vw);
+    transform: translate(50%, 0);
+    animation: bounce 1s infinite linear;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate(0);
+    }
+  
+    50% {
+      transform: translate(0, 5px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
