@@ -7,9 +7,9 @@ function RoutesApp() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/criacao-de-aplicativos" element={<Criacao />} />
-        <Route path="/backup-em-nuvem" element={<Backup />} />
+        <Route exact path="/" element={<Index />} />
+        <Route exact path="/criacao-de-aplicativos" element={<Criacao />} />
+        <Route exact path="/backup-em-nuvem" element={<Backup />} />
       </Routes>
     </HashRouter>
   );
